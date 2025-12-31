@@ -2,296 +2,368 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ITEK Bridge</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap"
-        rel="stylesheet">`
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ITEK Bridge</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&display=swap"
+    rel="stylesheet">`
+  <link rel="stylesheet" href="style.css">
+  <!-- Intl Tel Input -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
+
 </head>
 
 <body>
-    <div class="nav">
+   <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3 glass-nav">
+        <div class="container">
 
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3 glass-nav">
-            <div class="container">
-                <a class="navbar-brand d-flex align-items-center fw-bold fs-4" href="./index.html">
-                    <span class="logo-icon me-2"
-                        style="font-family: Inter;font-weight: 700;font-style: Bold;font-size: 24px;line-height: 32px;letter-spacing: -0.6px;vertical-align: middle;">I</span>
-                    ITEK Bridge
+            <a class="navbar-brand d-flex align-items-center fw-bold fs-4" href="./index.html">
+                <span class="logo-icon me-2" style="font-family: Inter;font-weight:700;font-size:24px;">I</span>
+                ITEK Bridge
+            </a>
+
+
+            <button class="navbar-toggler border-0" type="button" id="mobileNavToggle">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse d-none d-lg-flex">
+
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="./solutions.html">Solutions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="./contactUs.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-light rounded-pill px-4 fw-semibold" href="./contactUs.html">
+                            Get Started
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="mobile-nav-overlay" id="mobileNav">
+        <button class="close-btn" id="closeMobileNav">&times;</button>
+
+
+        <ul class="mobile-nav-links">
+            <li><a href="./solutions.html">Solutions</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contactUs.html">Contact Us</a></li>
+            <li>
+                <a href="./contactUs.html" class="btn btn-primary px-5 py-3 rounded-pill mt-4">
+                    Get Started
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav nav-font ms-auto align-items-center">
-                        <li class="nav-item"><a class="nav-link px-3" href="./solutions.html">Solutions</a></li>
-                        <li class="nav-item"><a class="nav-link px-3" href="./about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link px-3" href="./contactUs.html">Contact us</a></li>
-                        <li class="nav-item ms-lg-3">
-                            <a class="btn btn-light rounded-pill px-4 fw-semibold" href="#contact">Get Started</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+            </li>
+        </ul>
     </div>
 
 
-    <section class="hero-sectionn  d-flex align-items-center text-center">
-        <div class="container-fluid">
-            <div class="row justify-content-center align-items-center" style="height:90vh">
-                <div class="col-lg-10">
-                    <div class="badge-pill d-inline-block mb-4">
-                        <span class="dot"
-                            style="font-family: Montserrat;font-weight: 600;font-style: SemiBold;font-size: 14px;line-height: 140%;letter-spacing: 0%;text-align: center;vertical-align: middle;"></span>
-                        Contact us
-                    </div>
-                    <h1 class="fw-bold text-white mb-3">
-                        <span>Let's Build the Future Together</span>
-                        <span id="typewriter" class="text-highlight gradient-text"
-                            style="font-family: Montserrat;font-weight: 800;font-size: 2rem;">Future Together</span>
-
-                    </h1>
-                    <p class="lead text-secondary mb-5 mx-auto" style="max-width: 600px;font-family: inter;">
-                        Whether you're scaling your engineering team or looking for your next career challenge, our team
-                        is ready to help.
-                    </p>
-
-                </div>
-            </div>
-        
-           
-<div class="container py-5">
-  <div class="row g-4 justify-content-center">
-
-
-    <div class="col-lg-6 col-md-12">
-      <div class="contact-card d-flex align-items-center p-4 rounded-4 h-100">
-        <img src="./Assest/contact/ph.svg" alt="">
-        
-        <div style="padding-left: 50px;">
-          <h6 class="mb-1 text-white fw-semibold">Call Us</h6>
-          <small class="text-light opacity-75">+1 (123) 123-4567</small>
+  <section class="hero-sectionn  d-flex align-items-center text-center">
+    <div class="container-fluid">
+      <div class="row justify-content-center align-items-center" style="height:100vh">
+        <div class="col-lg-10">
+          <div class="badge-pill d-inline-block mb-4">
+            <span class="dot"
+              style="font-family: Montserrat;font-weight: 600;font-style: SemiBold;font-size: 14px;line-height: 140%;letter-spacing: 0%;text-align: center;vertical-align: middle;"></span>
+            Contact us
+          </div>
+          <h1 class="fw-bold text-white mb-3">
+            <span>Let's Build the Future Together</span>
+            <span id="typewriter" class="text-highlight gradient-text"
+              style="font-family: Montserrat;font-weight: 800;font-size: 2rem;">Future Together</span>
+          </h1>
+          <p class="lead text-secondary mb-5 mx-auto" style="max-width: 600px;font-family: inter;">
+            Whether you're scaling your engineering team or looking for your next career challenge, our team
+            is ready to help.
+          </p>
         </div>
       </div>
     </div>
+  </section>
 
-    
-    <div class="col-lg-6 col-md-12">
-      <div class="contact-card d-flex align-items-center p-4 rounded-4 h-100">
-        <img src="./Assest/contact/mail.svg" alt="">
-        
-        <div  style="padding-left: 50px;">
-          <h6 class="mb-1 text-white fw-semibold">Email Us</h6>
-          <small class="text-light opacity-75">contact@itekbridge.com</small>
-        </div>
-      </div>
+  <section>
+    <div class="container">
+      <div class="row g-5 align-items-center">
+       <div class="col-lg-5 p-5 rounded-4" style="border: 1px solid rgba(51, 65, 85, 1);">
+  <h2 class="fw-bold text-white mb-4">Contact Information</h2>
+
+  <div class="d-flex align-items-start mb-4">
+    <img src="./Assest/contact/ph.svg" class="me-3" alt="">
+    <div>
+      <h6 class="text-white mb-1">Call Us</h6>
+      <small class="text-secondary">+1 (123) 123-4567</small>
     </div>
+  </div>
 
-    <div class="col-lg-6 col-md-12">
-      <div class="contact-card d-flex align-items-center p-4 rounded-4 h-100">
-        <img src="./Assest/contact/loc.svg" alt="" >
-        
-        <div  style="padding-left: 50px;">
-          <h6 class="mb-1 text-white fw-semibold">Headquarters</h6>
-          <small class="text-light opacity-75">
-            123 Tech Park Blvd, Silicon Valley, CA 94000
-          </small>
-        </div>
-      </div>
+  <div class="d-flex align-items-start mb-4">
+    <img src="./Assest/contact/mail.svg" class="me-3" alt="">
+    <div>
+      <h6 class="text-white mb-1">Email Us</h6>
+      <small class="text-secondary">contact@itekbridge.com</small>
     </div>
+  </div>
 
-    
-    <div class="col-lg-6 col-md-12">
-      <div class="contact-card p-4 rounded-4 h-100">
-        
-        <div class="d-flex gap-3 ">
-            <h5 class="text-white fw-semibold mb-3 "> Follow Us :</h5>
-          <span class="iconify social-follow" data-icon="mdi:linkedin"></span>
-          <span class="iconify social-follow" data-icon="mdi:facebook"></span>
-          <span class="iconify social-follow" data-icon="simple-icons:x"></span>
-          <span class="iconify social-follow" data-icon="mdi:youtube"></span>
-          <span class="iconify social-follow" data-icon="mdi:instagram"></span>
-        </div>
-      </div>
+  <div class="d-flex align-items-start mb-4">
+    <img src="./Assest/contact/loc.svg" class="me-3" alt="">
+    <div>
+      <h6 class="text-white mb-1">Headquarters</h6>
+      <small class="text-secondary">
+        123 Tech Park Blvd, Silicon Valley, CA 94000
+      </small>
     </div>
+  </div>
 
+  <!-- FOLLOW US -->
+  <div class="mt-4">
+    <h6 class="text-white mb-3">Follow Us</h6>
+    <div class="d-flex gap-3">
+      <a href="#" class="text-white fs-5"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="text-white fs-5"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="text-white fs-5"><i class="bi bi-linkedin"></i></a>
+      <a href="#" class="text-white fs-5"><i class="bi bi-twitter-x"></i></a>
+      <a href="#" class="text-white fs-5"><i class="bi bi-youtube"></i></a>
+    </div>
   </div>
 </div>
 
+        <div class="col-lg-7 ">
+          <div class="contact-form-card p-4 p-md-5 rounded-4">
+            <h4 class="text-white fw-semibold mb-4">Send a Message</h4>
+            <p class="text-secondary mb-4">
+            Fill out the form and our team will get back to you ASAP!
+          </p>
 
+            <form>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <input type="text" class="form-control custom-input" placeholder="First Name">
+                </div>
+                <div class="col-md-6">
+                  <input type="text" class="form-control custom-input" placeholder="Last Name">
+                </div>
 
+                <div class="col-md-6">
+                  <input type="email" class="form-control custom-input" placeholder="Email">
+                </div>
+                <div class="col-md-6">
+                  <input type="tel" class="form-control custom-input" placeholder="Phone">
+                </div>
 
-        </div>
-    </section>
+                <div class="col-12">
+                  <textarea rows="5" class="form-control custom-input" placeholder="Message"></textarea>
+                </div>
 
-
-
-    <section class="  w-100" id="solutions" style="border: 1px solid #334155;background-color: #0F172A;">
-        <div class="py-5">
-            <div class="text-center mb-5">
-                <span class="text-primary fw-bold text-uppercase small">COMMON QUERIES</span>
-                <h2 class="display-5 fw-bold text-white">Frequently Asked Questions</h2>
-               
-            </div>
-            <div class="accordion faq-accordion mx-auto" id="faqAccordion" style="max-width: 820px;">
-
-      <!-- Item 1 -->
-      <div class="accordion-item bg-transparent border-0 mb-3">
-        <h2 class="accordion-header">
-          <button class="accordion-button faq-btn" type="button"
-            data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true">
-            How quickly can you fill a role?
-          </button>
-        </h2>
-        <div id="faq1" class="accordion-collapse collapse show"
-          data-bs-parent="#faqAccordion">
-          <div class="accordion-body faq-body">
-            For contract roles, we typically submit qualified profiles within
-            48 hours. For permanent specialized roles, our average time-to-hire
-            is 14 days, significantly faster than the industry average of 45 days.
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary px-5 py-2 rounded-pill fw-semibold">
+                    Send
+                  </button>
+                </div>
+              </div>
+            </form>
           </div>
         </div>
       </div>
-
-      <!-- Item 2 -->
-      <div class="accordion-item bg-transparent border-0 mb-3">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed faq-btn" type="button"
-            data-bs-toggle="collapse" data-bs-target="#faq2">
-            Do you offer a replacement guarantee?
-          </button>
-        </h2>
-        <div id="faq2" class="accordion-collapse collapse"
-          data-bs-parent="#faqAccordion">
-          <div class="accordion-body faq-body">
-            For contract roles, we typically submit qualified profiles within
-            48 hours. For permanent specialized roles, our average time-to-hire
-            is 14 days, significantly faster than the industry average of 45 days.
-          </div>
-        </div>
-      </div>
-
-      <!-- Item 3 -->
-      <div class="accordion-item bg-transparent  border-0 mb-3">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed faq-btn" type="button"
-            data-bs-toggle="collapse" data-bs-target="#faq3">
-            What does your vetting process look like?
-          </button>
-        </h2>
-        <div id="faq3" class="accordion-collapse collapse"
-          data-bs-parent="#faqAccordion">
-          <div class="accordion-body faq-body">
-             For contract roles, we typically submit qualified profiles within
-            48 hours. For permanent specialized roles, our average time-to-hire
-            is 14 days, significantly faster than the industry average of 45 days.
-          </div>
-        </div>
-      </div>
-
-      <!-- Item 4 -->
-      <div class="accordion-item bg-transparent border-0">
-        <h2 class="accordion-header">
-          <button class="accordion-button collapsed faq-btn" type="button"
-            data-bs-toggle="collapse" data-bs-target="#faq4">
-            Do you work with startups?
-          </button>
-        </h2>
-        <div id="faq4" class="accordion-collapse collapse"
-          data-bs-parent="#faqAccordion">
-          <div class="accordion-body faq-body">
-            For contract roles, we typically submit qualified profiles within
-            48 hours. For permanent specialized roles, our average time-to-hire
-            is 14 days, significantly faster than the industry average of 45 days.
-          </div>
-        </div>
-      </div>
-
     </div>
-        </div>
-    </section>
+  </section>
 
+  <section class="  w-100" id="solutions" style="border: 1px solid #334155;background-color: #0F172A;">
+    <div class="py-5">
+      <div class="text-center mb-5">
+        <span class="montserrat fw-bold text-uppercase small">COMMON QUERIES</span>
+        <h2 class="display-5 fw-bold text-white">Frequently Asked Questions</h2>
 
-    <footer class="py-5" style="background: #020617; border-top: 1px solid #1e293b;" id="contact">
-        <div class="container">
-            <div class="row g-4 text-secondary text-center text-md-start">
-                <div class="col-lg-4">
-                    <a class="navbar-brand d-flex align-items-center justify-content-center justify-content-md-start fw-bold fs-4 text-white mb-3"
-                        href="#">
-                        <span class="logo-icon me-2">I</span> ITEK Bridge
-                    </a>
-                    <p class="small">Connecting world-class enterprises with the top 1% of engineering talent.</p>
-                    <div class="social-icons d-flex gap-3 justify-content-center justify-content-md-start" >
-                        <span class="iconify" data-icon="mdi:facebook"  ></span>
-                        <span class="iconify" data-icon="mdi:instagram"></span>
-                        <span class="iconify" data-icon="mdi:linkedin"></span>
-                        <span class="iconify" data-icon="simple-icons:x"></span>
+      </div>
+      <div class="accordion faq-accordion mx-auto" id="faqAccordion" style="max-width: 820px;">
 
-
-                        <span class="iconify" data-icon="mdi:youtube"></span>
-                    </div>
-
-                </div>
-                <div class="col-6 col-lg-2 ">
-                    <h6 class="text-white mb-3">Company</h6>
-                    <ul class="list-unstyled small">
-                        <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">Solutions</a></li>
-                        <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">About</a></li>
-                        <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">Contact Us</a></li>
-                    </ul>
-                </div>
-                <div class="col-6 col-lg-2">
-                    <h6 class="text-white mb-3">Solutions</h6>
-                    <ul class="list-unstyled small">
-                        <li class="mb-2">AI & Machine Learning</li>
-                        <li class="mb-2">Cybersecurity</li>
-                        <li class="mb-2">Cloud Computing</li>
-                    </ul>
-                </div>
-                <div class="col-lg-4">
-                    <h6 class="text-white mb-3">Contact Us</h6>
-                    <ul class="list-unstyled small">
-                        <li class="mb-2 d-flex align-items-center justify-content-start justify-content-md-start gap-2">
-                            <img src="./Assest/home/ph.svg" alt=""> +1 (123) 123-4567
-                        </li>
-                        <li class="mb-2 d-flex align-items-center justify-content-start justify-content-md-start gap-2">
-                            <img src="./Assest/home/mail.svg" alt=""> contact@itekbridge.com
-                        </li>
-                        <li class="mb-2 d-flex align-items-center justify-content-start justify-content-md-start gap-2">
-                            <img src="./Assest/home/loc.svg" alt=""> 123 Tech Park Blvd, Silicon Valley
-                        </li>
-                    </ul>
-                </div>
+        <!-- Item 1 -->
+        <div class="accordion-item bg-transparent border-0 mb-3">
+          <h2 class="accordion-header">
+            <button class="accordion-button faq-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faq1"
+              aria-expanded="true">
+              How quickly can you fill a role?
+            </button>
+          </h2>
+          <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+            <div class="accordion-body faq-body">
+              For contract roles, we typically submit qualified profiles within
+              48 hours. For permanent specialized roles, our average time-to-hire
+              is 14 days, significantly faster than the industry average of 45 days.
             </div>
-            <div class="border-top border-secondary mt-5 pt-4 text-center small text-secondary">
-                &copy; 2025 ITEK Bridge. All rights reserved.
-            </div>
+          </div>
         </div>
-    </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Item 2 -->
+        <div class="accordion-item bg-transparent border-0 mb-3">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed faq-btn" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faq2">
+              Do you offer a replacement guarantee?
+            </button>
+          </h2>
+          <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body faq-body">
+              For contract roles, we typically submit qualified profiles within
+              48 hours. For permanent specialized roles, our average time-to-hire
+              is 14 days, significantly faster than the industry average of 45 days.
+            </div>
+          </div>
+        </div>
 
-    <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
-    <script>
-  document.addEventListener("DOMContentLoaded", function () {
-    const currentPage = window.location.pathname.split("/").pop();
-    const navLinks = document.querySelectorAll(".navbar .nav-link");
+        <!-- Item 3 -->
+        <div class="accordion-item bg-transparent  border-0 mb-3">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed faq-btn" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faq3">
+              What does your vetting process look like?
+            </button>
+          </h2>
+          <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body faq-body">
+              For contract roles, we typically submit qualified profiles within
+              48 hours. For permanent specialized roles, our average time-to-hire
+              is 14 days, significantly faster than the industry average of 45 days.
+            </div>
+          </div>
+        </div>
 
-    navLinks.forEach(link => {
-      const linkPage = link.getAttribute("href").split("/").pop();
-      if (linkPage === currentPage) {
-        link.classList.add("active");
-      }
+
+        <div class="accordion-item bg-transparent border-0">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed faq-btn" type="button" data-bs-toggle="collapse"
+              data-bs-target="#faq4">
+              Do you work with startups?
+            </button>
+          </h2>
+          <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+            <div class="accordion-body faq-body">
+              For contract roles, we typically submit qualified profiles within
+              48 hours. For permanent specialized roles, our average time-to-hire
+              is 14 days, significantly faster than the industry average of 45 days.
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <footer class="py-5" style="background: #020617; border-top: 1px solid #1e293b;" id="contact">
+    <div class="container">
+      <div class="row g-4 text-secondary text-center text-md-start">
+        <div class="col-lg-4" style="color: #CBD5E1;">
+          <a class="navbar-brand d-flex align-items-center justify-content-center justify-content-md-start fw-bold fs-4 text-white mb-3"
+            href="#">
+            <span class="logo-icon me-2">I</span> ITEK Bridge
+          </a>
+          <p class="small">Connecting world-class enterprises with the top 1% of engineering talent.</p>
+          <div class="social-icons d-flex gap-3 justify-content-center justify-content-md-start">
+            <span class="iconify" data-icon="mdi:facebook"></span>
+            <span class="iconify" data-icon="mdi:instagram"></span>
+            <span class="iconify" data-icon="mdi:linkedin"></span>
+            <span class="iconify" data-icon="simple-icons:x"></span>
+
+
+            <span class="iconify" data-icon="mdi:youtube"></span>
+          </div>
+
+        </div>
+        <div class="col-6 col-lg-2 ">
+          <h6 class="text-white mb-3">Company</h6>
+          <ul class="list-unstyled small">
+            <li class="mb-2" ><a href="#" class=" text-decoration-none" style="color: #CBD5E1;" >Solutions</a></li>
+            <li class="mb-2"><a href="#" class=" text-decoration-none" style="color: #CBD5E1;">About</a></li>
+            <li class="mb-2"><a href="#" class=" text-decoration-none" style="color: #CBD5E1;">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2" style="color: #CBD5E1;">
+          <h6 class="text-white mb-3">Solutions</h6>
+          <ul class="list-unstyled small">
+            <li class="mb-2">AI & Machine Learning</li>
+            <li class="mb-2">Cybersecurity</li>
+            <li class="mb-2">Cloud Computing</li>
+            <li class="mb-2">Full Stack Development</li>
+            <li class="mb-2">Product Management</li>
+            <li class="mb-2">Enterprise Applications</li>
+            <li class="mb-2">Web & Mobile Development</li>
+            <li class="mb-2">QA & Testing</li>
+
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <h6 class="text-white mb-3">Contact Us</h6>
+          <ul class="list-unstyled small" style="color: #FFFFFF;">
+            <li class="mb-2 d-flex align-items-center justify-content-start justify-content-md-start gap-2">
+              <img src="./Assest/home/ph.svg" alt=""> +1 (123) 123-4567
+            </li>
+            <li class="mb-2 d-flex align-items-center justify-content-start justify-content-md-start gap-2">
+              <img src="./Assest/home/mail.svg" alt=""> contact@itekbridge.com
+            </li>
+            <li class="mb-2 d-flex align-items-center justify-content-start justify-content-md-start gap-2">
+              <img src="./Assest/home/loc.svg" alt=""> 123 Tech Park Blvd, Silicon Valley
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-top border-secondary mt-5 pt-4 text-center small " style="color: #CBD5E1;">
+        &copy; 2025 ITEK Bridge. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const currentPage = window.location.pathname.split("/").pop();
+      const navLinks = document.querySelectorAll(".navbar .nav-link");
+
+      navLinks.forEach(link => {
+        const linkPage = link.getAttribute("href").split("/").pop();
+        if (linkPage === currentPage) {
+          link.classList.add("active");
+        }
+      });
     });
-  });
-</script>
+
+
+    const openBtn = document.getElementById("mobileNavToggle");
+        const closeBtn = document.getElementById("closeMobileNav");
+        const mobileNav = document.getElementById("mobileNav");
+
+        openBtn.addEventListener("click", () => {
+            mobileNav.classList.add("active");
+            document.body.style.overflow = "hidden";
+        });
+
+        closeBtn.addEventListener("click", () => {
+            mobileNav.classList.remove("active");
+            document.body.style.overflow = "";
+        });
+
+        document.querySelectorAll(".mobile-nav-links a").forEach(link => {
+            link.addEventListener("click", () => {
+                mobileNav.classList.remove("active");
+                document.body.style.overflow = "";
+            });
+        });
+  </script>
 
 
 </body>

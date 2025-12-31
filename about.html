@@ -16,38 +16,67 @@
 </head>
 
 <body>
-    <div class="nav">
+   
+   <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3 glass-nav">
+        <div class="container">
 
-        <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3 glass-nav">
-            <div class="container">
-                <a class="navbar-brand d-flex align-items-center fw-bold fs-4" href="./index.html">
-                    <span class="logo-icon me-2"
-                        style="font-family: Inter;font-weight: 700;font-style: Bold;font-size: 24px;line-height: 32px;letter-spacing: -0.6px;vertical-align: middle;">I</span>
-                    ITEK Bridge
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav nav-font ms-auto align-items-center">
-                        <li class="nav-item"><a class="nav-link px-3" href="./solutions.html">Solutions</a></li>
-                        <li class="nav-item"><a class="nav-link px-3" href="./about.html">About</a></li>
-                        <li class="nav-item"><a class="nav-link px-3" href="./contactUs.html">Contact us</a></li>
-                        <li class="nav-item ms-lg-3">
-                            <a class="btn btn-light rounded-pill px-4 fw-semibold" href="#contact">Get Started</a>
-                        </li>
-                    </ul>
-                </div>
+            <a class="navbar-brand d-flex align-items-center fw-bold fs-4" href="./index.html">
+                <span class="logo-icon me-2" style="font-family: Inter;font-weight:700;font-size:24px;">I</span>
+                ITEK Bridge
+            </a>
+
+
+            <button class="navbar-toggler border-0" type="button" id="mobileNavToggle">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse d-none d-lg-flex">
+
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="./solutions.html">Solutions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="./about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link px-3" href="./contactUs.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a class="btn btn-light rounded-pill px-4 fw-semibold" href="./contactUs.html">
+                            Get Started
+                        </a>
+                    </li>
+                </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
+
+
+    <div class="mobile-nav-overlay" id="mobileNav">
+        <button class="close-btn" id="closeMobileNav">&times;</button>
+
+
+        <ul class="mobile-nav-links">
+            <li><a href="./solutions.html">Solutions</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contactUs.html">Contact Us</a></li>
+            <li>
+                <a href="./contactUs.html" class="btn btn-primary px-5 py-3 rounded-pill mt-4">
+                    Get Started
+                </a>
+            </li>
+        </ul>
     </div>
+
 
 
 
 
     <section class="hero-sectionn  d-flex align-items-center text-center">
         <div class="container-fluid">
-            <div class="row justify-content-center align-items-center" style="height:90vh">
+            <div class="row justify-content-center align-items-center" style="height:100vh">
                 <div class="col-lg-10">
                     <div class="badge-pill d-inline-block mb-4">
                         <span class="dot"
@@ -72,12 +101,11 @@
 
 
 
-     <!-- Vendor Empanelment & Management Section -->
+    
 <section class="vendor-section py-5 bg-darker">
     <div class="container">
         <div class="row align-items-center g-5">
 
-            <!-- Left Content -->
             <div class="col-lg-6">
                 <p class="vendor-tag text-uppercase">OUR PHILOSOPHY</p>
 
@@ -117,7 +145,7 @@
                 </div>
             </div>
 
-            <!-- Right Image -->
+           
             <div class="col-lg-6 text-center">
                 <div class="vendor-image-wrapper mx-auto">
                     <img src="./Assest/solutions/Frame.png" alt="Vendor Management">
@@ -133,8 +161,8 @@
  <section class="py-5 bg-darker">
         <div class="container py-5 text-center">
              <img src="./Assest/about/Vector.svg" alt="">
-            <h2 class="text-white mb-5" style="font-family: Montserrat;">"To empower enterprises, from fast-growing startups to Fortune 500 companies, by providing a unified, reliable ecosystem for sourcing elite technical talent and managing high-performing vendor partnerships."</h2>
-            <p class="text-primary fw-bold text-uppercase small">~ OUR MISSION</p>
+            <h2 class="mission mb-5" style="color: #FFFFFF;">"To empower enterprises, from fast-growing startups to Fortune 500 companies, by providing a unified, reliable ecosystem for sourcing elite technical talent and managing high-performing vendor partnerships."</h2>
+            <p class="montserrat fw-bold text-uppercase small">~ OUR MISSION</p>
            
         </div>
     </section>
@@ -147,7 +175,7 @@
     <section class="  w-100" id="solutions" style="border: 1px solid #334155;background-color: #0F172A;">
         <div class="py-5">
             <div class="text-center mb-5">
-                <span class="text-primary fw-bold text-uppercase small">THE ITEK BRIDGE DIFFERENCE</span>
+                <span class="montserrat fw-bold text-uppercase small">THE ITEK BRIDGE DIFFERENCE</span>
                 <h2 class="display-5 fw-bold text-white">Why Partner With Us?</h2>
             </div>
             <div class="container">
@@ -193,7 +221,7 @@
 
     
     <div class="text-center mb-5">
-      <small class="text-info fw-semibold text-uppercase">
+      <small class="montserrat fw-semibold text-uppercase">
         Unified Platform
       </small>
       <h2 class="fw-bold text-white mt-2">
@@ -201,7 +229,8 @@
       </h2>
     </div>
 
-    <div class="d-flex flex-wrap justify-content-center align-items-center gap-3">
+    <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center gap-3">
+
 
     
       <div class="card domain-card  custom-card text-center text-white  rounded-4 px-3 py-4 col-3" style="width:260px;">
@@ -213,9 +242,13 @@
       </div>
 
      
-      <div class="flow-arrow d-none d-lg-flex align-items-center col-1">
-        <img src="./Assest/about/Rounded rectangle _-_ Rounded rectangle.png" alt="arrow" class="img-fluid" >
-      </div>
+     
+<div class="flow-arrow d-flex justify-content-center align-items-center">
+  <img src="./Assest/about/Rounded rectangle _-_ Rounded rectangle.png"
+       alt="arrow"
+       class="arrow-img">
+</div>
+
 
      
       <div class="card domain-card  custom-card text-center text-white rounded-4 px-3 py-4 col-3" style="width:260px;">
@@ -227,9 +260,13 @@
       </div>
 
      
-      <div class="flow-arrow d-none d-lg-flex align-items-center col-1">
-        <img src="./Assest/about/Rounded rectangle _-_ Rounded rectangle.png" alt="arrow" class="img-fluid">
-      </div>
+     
+<div class="flow-arrow d-flex justify-content-center align-items-center">
+  <img src="./Assest/about/Rounded rectangle _-_ Rounded rectangle.png"
+       alt="arrow"
+       class="arrow-img">
+</div>
+
 
       
       <div class="card domain-card  custom-card text-center text-white  rounded-4 px-3 py-4 " style="width:260px;">
@@ -252,7 +289,7 @@
 
    
     <div class="text-center mb-5">
-      <small class="text-info fw-semibold text-uppercase">Leadership</small>
+      <small class="montserrat fw-semibold text-uppercase">Leadership</small>
       <h2 class="fw-bold text-white mt-2">Meet the Minds</h2>
     </div>
 
@@ -410,7 +447,10 @@
 
 
                         <span class="iconify" data-icon="mdi:youtube"></span>
+
+                        
                     </div>
+                    
 
                 </div>
                 <div class="col-6 col-lg-2 ">
@@ -421,12 +461,18 @@
                         <li class="mb-2"><a href="#" class="text-secondary text-decoration-none">Contact Us</a></li>
                     </ul>
                 </div>
-                <div class="col-6 col-lg-2">
+                  <div class="col-6 col-lg-2">
                     <h6 class="text-white mb-3">Solutions</h6>
                     <ul class="list-unstyled small">
                         <li class="mb-2">AI & Machine Learning</li>
                         <li class="mb-2">Cybersecurity</li>
                         <li class="mb-2">Cloud Computing</li>
+                        <li class="mb-2">Full Stack Development</li>
+                        <li class="mb-2">Product Management</li>
+                        <li class="mb-2">Enterprise Applications</li>
+                        <li class="mb-2">Web & Mobile Development</li>
+                        <li class="mb-2">QA & Testing</li>
+
                     </ul>
                 </div>
                 <div class="col-lg-4">
@@ -453,7 +499,41 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     
     <script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
-    
+       <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const currentPage = window.location.pathname.split("/").pop();
+    const navLinks = document.querySelectorAll(".navbar .nav-link");
+
+    navLinks.forEach(link => {
+      const linkPage = link.getAttribute("href").split("/").pop();
+      if (linkPage === currentPage) {
+        link.classList.add("active");
+      }
+    });
+  });
+
+  const openBtn = document.getElementById("mobileNavToggle");
+        const closeBtn = document.getElementById("closeMobileNav");
+        const mobileNav = document.getElementById("mobileNav");
+
+        openBtn.addEventListener("click", () => {
+            mobileNav.classList.add("active");
+            document.body.style.overflow = "hidden";
+        });
+
+        closeBtn.addEventListener("click", () => {
+            mobileNav.classList.remove("active");
+            document.body.style.overflow = "";
+        });
+
+        document.querySelectorAll(".mobile-nav-links a").forEach(link => {
+            link.addEventListener("click", () => {
+                mobileNav.classList.remove("active");
+                document.body.style.overflow = "";
+            });
+        });
+</script>
+
 
 </body>
 
