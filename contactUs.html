@@ -14,63 +14,63 @@
     rel="stylesheet">`
   <link rel="stylesheet" href="style.css">
   <!-- Intl Tel Input -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
 
 </head>
 
 <body>
-   <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3 glass-nav">
-        <div class="container">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3 glass-nav">
+    <div class="container">
 
-            <a class="navbar-brand d-flex align-items-center fw-bold fs-4" href="./index.html">
-                <span class="logo-icon me-2" style="font-family: Inter;font-weight:700;font-size:24px;">I</span>
-                ITEK Bridge
+      <a class="navbar-brand d-flex align-items-center fw-bold fs-4" href="./index.html">
+        <span class="logo-icon me-2" style="font-family: Inter;font-weight:700;font-size:24px;">I</span>
+        ITEK Bridge
+      </a>
+
+
+      <button class="navbar-toggler border-0" type="button" id="mobileNavToggle">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+      <div class="collapse navbar-collapse d-none d-lg-flex">
+
+        <ul class="navbar-nav ms-auto align-items-center">
+          <li class="nav-item">
+            <a class="nav-link px-3" href="./solutions.html">Solutions</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3" href="./about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link px-3" href="./contactUs.html">Contact Us</a>
+          </li>
+          <li class="nav-item ms-lg-3">
+            <a class="btn btn-light rounded-pill px-4 fw-semibold" href="./contactUs.html">
+              Get Started
             </a>
-
-
-            <button class="navbar-toggler border-0" type="button" id="mobileNavToggle">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-
-            <div class="collapse navbar-collapse d-none d-lg-flex">
-
-                <ul class="navbar-nav ms-auto align-items-center">
-                    <li class="nav-item">
-                        <a class="nav-link px-3" href="./solutions.html">Solutions</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link px-3" href="./about.html">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link px-3" href="./contactUs.html">Contact Us</a>
-                    </li>
-                    <li class="nav-item ms-lg-3">
-                        <a class="btn btn-light rounded-pill px-4 fw-semibold" href="./contactUs.html">
-                            Get Started
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-
-    <div class="mobile-nav-overlay" id="mobileNav">
-        <button class="close-btn" id="closeMobileNav">&times;</button>
-
-
-        <ul class="mobile-nav-links">
-            <li><a href="./solutions.html">Solutions</a></li>
-            <li><a href="./about.html">About</a></li>
-            <li><a href="./contactUs.html">Contact Us</a></li>
-            <li>
-                <a href="./contactUs.html" class="btn btn-primary px-5 py-3 rounded-pill mt-4">
-                    Get Started
-                </a>
-            </li>
+          </li>
         </ul>
+      </div>
     </div>
+  </nav>
+
+
+  <div class="mobile-nav-overlay" id="mobileNav">
+    <button class="close-btn" id="closeMobileNav">&times;</button>
+
+
+    <ul class="mobile-nav-links">
+      <li><a href="./solutions.html">Solutions</a></li>
+      <li><a href="./about.html">About</a></li>
+      <li><a href="./contactUs.html">Contact Us</a></li>
+      <li>
+        <a href="./contactUs.html" class="btn btn-primary px-5 py-3 rounded-pill mt-4">
+          Get Started
+        </a>
+      </li>
+    </ul>
+  </div>
 
 
   <section class="hero-sectionn  d-flex align-items-center text-center">
@@ -87,7 +87,7 @@
             <span id="typewriter" class="text-highlight gradient-text"
               style="font-family: Montserrat;font-weight: 800;font-size: 2rem;">Future Together</span>
           </h1>
-          <p class="lead text-secondary mb-5 mx-auto" style="max-width: 600px;font-family: inter;">
+          <p class="lead inter mb-5 mx-auto" style="max-width: 600px;font-family: inter;">
             Whether you're scaling your engineering team or looking for your next career challenge, our team
             is ready to help.
           </p>
@@ -98,74 +98,91 @@
 
   <section>
     <div class="container">
-      <div class="row g-5 align-items-center">
-       <div class="col-lg-5 p-5 rounded-4" style="border: 1px solid rgba(51, 65, 85, 1);">
-  <h2 class="fw-bold text-white mb-4">Contact Information</h2>
+      <div class="row g-5 align-items-stretch">
 
-  <div class="d-flex align-items-start mb-4">
-    <img src="./Assest/contact/ph.svg" class="me-3" alt="">
-    <div>
-      <h6 class="text-white mb-1">Call Us</h6>
-      <small class="text-secondary">+1 (123) 123-4567</small>
-    </div>
-  </div>
+        <div class="contact-box col-lg-5 p-5 rounded-4" style="border: 1px solid rgba(51, 65, 85, 1);">
+          <h2 class="fw-bold text-white mb-4">Contact Information</h2>
 
-  <div class="d-flex align-items-start mb-4">
-    <img src="./Assest/contact/mail.svg" class="me-3" alt="">
-    <div>
-      <h6 class="text-white mb-1">Email Us</h6>
-      <small class="text-secondary">contact@itekbridge.com</small>
-    </div>
-  </div>
+          <div class="d-flex align-items-start mb-4">
+            <img src="./Assest/contact/ph.svg" class="me-3" alt="">
+            <div>
+              <h6 class="text-white mb-1">Call Us</h6>
+              <small class="inter">+1 (123) 123-4567</small>
+            </div>
+          </div>
 
-  <div class="d-flex align-items-start mb-4">
-    <img src="./Assest/contact/loc.svg" class="me-3" alt="">
-    <div>
-      <h6 class="text-white mb-1">Headquarters</h6>
-      <small class="text-secondary">
-        123 Tech Park Blvd, Silicon Valley, CA 94000
-      </small>
-    </div>
-  </div>
+          <div class="d-flex align-items-start mb-4">
+            <img src="./Assest/contact/mail.svg" class="me-3" alt="">
+            <div>
+              <h6 class="text-white mb-1">Email Us</h6>
+              <small class="inter">contact@itekbridge.com</small>
+            </div>
+          </div>
 
-  <!-- FOLLOW US -->
-  <div class="mt-4">
-    <h6 class="text-white mb-3">Follow Us</h6>
-    <div class="d-flex gap-3">
-      <a href="#" class="text-white fs-5"><i class="bi bi-facebook"></i></a>
-      <a href="#" class="text-white fs-5"><i class="bi bi-instagram"></i></a>
-      <a href="#" class="text-white fs-5"><i class="bi bi-linkedin"></i></a>
-      <a href="#" class="text-white fs-5"><i class="bi bi-twitter-x"></i></a>
-      <a href="#" class="text-white fs-5"><i class="bi bi-youtube"></i></a>
-    </div>
-  </div>
-</div>
+          <div class="d-flex align-items-start mb-4">
+            <img src="./Assest/contact/loc.svg" class="me-3" alt="">
+            <div>
+              <h6 class="text-white mb-1">Headquarters</h6>
+              <small class="inter">
+                123 Tech Park Blvd, Silicon Valley, CA 94000
+              </small>
+            </div>
+          </div>
+
+          <!-- FOLLOW US -->
+          <div class="mt-4">
+            <h6 class="text-white mb-3">Follow Us</h6>
+            <div class="d-flex gap-3">
+               <div class="footer-socials justify-content-center justify-content-md-start">
+            <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
+          </div>
+            </div>
+          </div>
+        </div>
 
         <div class="col-lg-7 ">
-          <div class="contact-form-card p-4 p-md-5 rounded-4">
+          <div class="contact-box contact-form-card p-4 p-md-5 rounded-4">
             <h4 class="text-white fw-semibold mb-4">Send a Message</h4>
-            <p class="text-secondary mb-4">
-            Fill out the form and our team will get back to you ASAP!
-          </p>
+            <p class="inter mb-4">
+              Fill out the form and our team will get back to you ASAP!
+            </p>
 
-            <form>
+            <form id="contactForm" novalidate>
+
               <div class="row g-3">
                 <div class="col-md-6">
-                  <input type="text" class="form-control custom-input" placeholder="First Name">
+                  <input type="text" class="form-control custom-input" placeholder="First Name" required>
+                  <div class="invalid-feedback">First name is required</div>
+
                 </div>
                 <div class="col-md-6">
-                  <input type="text" class="form-control custom-input" placeholder="Last Name">
+                  <input type="text" class="form-control custom-input" placeholder="Last Name" required>
+                  <div class="invalid-feedback">Last name is required</div>
+
                 </div>
 
                 <div class="col-md-6">
-                  <input type="email" class="form-control custom-input" placeholder="Email">
+                  <input type="email" class="form-control custom-input" placeholder="Email" required>
+                  <div class="invalid-feedback">Enter a valid email</div>
+
                 </div>
                 <div class="col-md-6">
-                  <input type="tel" class="form-control custom-input" placeholder="Phone">
+                  <input type="tel" class="form-control custom-input" placeholder="Phone" required>
+                  <div class="invalid-feedback">Phone number is required</div>
+
                 </div>
 
                 <div class="col-12">
-                  <textarea rows="5" class="form-control custom-input" placeholder="Message"></textarea>
+                  <textarea rows="5" class="form-control custom-input" placeholder="Message" minlength="10"
+                    required></textarea>
+                  <div class="invalid-feedback">
+                    Message must be at least 10 characters
+                  </div>
+
                 </div>
 
                 <div class="col-12">
@@ -190,7 +207,7 @@
       </div>
       <div class="accordion faq-accordion mx-auto" id="faqAccordion" style="max-width: 820px;">
 
-        <!-- Item 1 -->
+
         <div class="accordion-item bg-transparent border-0 mb-3">
           <h2 class="accordion-header">
             <button class="accordion-button faq-btn" type="button" data-bs-toggle="collapse" data-bs-target="#faq1"
@@ -207,7 +224,6 @@
           </div>
         </div>
 
-        <!-- Item 2 -->
         <div class="accordion-item bg-transparent border-0 mb-3">
           <h2 class="accordion-header">
             <button class="accordion-button collapsed faq-btn" type="button" data-bs-toggle="collapse"
@@ -224,7 +240,7 @@
           </div>
         </div>
 
-        <!-- Item 3 -->
+
         <div class="accordion-item bg-transparent  border-0 mb-3">
           <h2 class="accordion-header">
             <button class="accordion-button collapsed faq-btn" type="button" data-bs-toggle="collapse"
@@ -265,30 +281,31 @@
 
   <footer class="py-5" style="background: #020617; border-top: 1px solid #1e293b;" id="contact">
     <div class="container">
-      <div class="row g-4 text-secondary text-center text-md-start">
+      <div class="row g-4 inter text-center text-md-start">
         <div class="col-lg-4" style="color: #CBD5E1;">
           <a class="navbar-brand d-flex align-items-center justify-content-center justify-content-md-start fw-bold fs-4 text-white mb-3"
             href="#">
             <span class="logo-icon me-2">I</span> ITEK Bridge
           </a>
           <p class="small">Connecting world-class enterprises with the top 1% of engineering talent.</p>
-          <div class="social-icons d-flex gap-3 justify-content-center justify-content-md-start">
-            <span class="iconify" data-icon="mdi:facebook"></span>
-            <span class="iconify" data-icon="mdi:instagram"></span>
-            <span class="iconify" data-icon="mdi:linkedin"></span>
-            <span class="iconify" data-icon="simple-icons:x"></span>
-
-
-            <span class="iconify" data-icon="mdi:youtube"></span>
+         <div class="footer-socials justify-content-center justify-content-md-start">
+            <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+            <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="social-icon"><i class="bi bi-twitter-x"></i></a>
+            <a href="#" class="social-icon"><i class="bi bi-youtube"></i></a>
           </div>
+
 
         </div>
         <div class="col-6 col-lg-2 ">
           <h6 class="text-white mb-3">Company</h6>
           <ul class="list-unstyled small">
-            <li class="mb-2" ><a href="#" class=" text-decoration-none" style="color: #CBD5E1;" >Solutions</a></li>
-            <li class="mb-2"><a href="#" class=" text-decoration-none" style="color: #CBD5E1;">About</a></li>
-            <li class="mb-2"><a href="#" class=" text-decoration-none" style="color: #CBD5E1;">Contact Us</a></li>
+            <li class="mb-2"><a href="./solutions.html" class=" text-decoration-none"
+                style="color: #CBD5E1;">Solutions</a></li>
+            <li class="mb-2"><a href="./about.html" class=" text-decoration-none" style="color: #CBD5E1;">About</a></li>
+            <li class="mb-2"><a href="./contactUs.html" class=" text-decoration-none" style="color: #CBD5E1;">Contact
+                Us</a></li>
           </ul>
         </div>
         <div class="col-6 col-lg-2" style="color: #CBD5E1;">
@@ -307,17 +324,18 @@
         </div>
         <div class="col-lg-4">
           <h6 class="text-white mb-3">Contact Us</h6>
-          <ul class="list-unstyled small" style="color: #FFFFFF;">
-            <li class="mb-2 d-flex align-items-center justify-content-start justify-content-md-start gap-2">
-              <img src="./Assest/home/ph.svg" alt=""> +1 (123) 123-4567
-            </li>
-            <li class="mb-2 d-flex align-items-center justify-content-start justify-content-md-start gap-2">
-              <img src="./Assest/home/mail.svg" alt=""> contact@itekbridge.com
-            </li>
-            <li class="mb-2 d-flex align-items-center justify-content-start justify-content-md-start gap-2">
-              <img src="./Assest/home/loc.svg" alt=""> 123 Tech Park Blvd, Silicon Valley
-            </li>
-          </ul>
+        <ul class="list-unstyled small" style="color: rgba(255, 255, 255, 1);">
+                        <li class="mb-2 d-flex align-items-center justify-content-start justify-content-md-start gap-2">
+                            <img src="./Assest/home/ph.svg" alt=""> <a  href="tel:+1(123)123-4567" style="color: #FFFFFF; text-decoration: none;">+1(123)123-4567</a>
+                        </li>
+                        <li class="mb-2 d-flex align-items-center justify-content-start justify-content-md-start gap-2">
+                            <img src="./Assest/home/mail.svg" alt=""> <a href="mailto:contact@itekbridge.com" style="text-decoration: none; color: #FFFFFF;">contact@itekbridge.com</a>
+
+                        </li>
+                        <li class="mb-2 d-flex align-items-center justify-content-start justify-content-md-start gap-2">
+                            <img src="./Assest/home/loc.svg" alt=""> 123 Tech Park Blvd, Silicon Valley
+                        </li>
+                    </ul>
         </div>
       </div>
       <div class="border-top border-secondary mt-5 pt-4 text-center small " style="color: #CBD5E1;">
@@ -344,25 +362,45 @@
 
 
     const openBtn = document.getElementById("mobileNavToggle");
-        const closeBtn = document.getElementById("closeMobileNav");
-        const mobileNav = document.getElementById("mobileNav");
+    const closeBtn = document.getElementById("closeMobileNav");
+    const mobileNav = document.getElementById("mobileNav");
 
-        openBtn.addEventListener("click", () => {
-            mobileNav.classList.add("active");
-            document.body.style.overflow = "hidden";
-        });
+    openBtn.addEventListener("click", () => {
+      mobileNav.classList.add("active");
+      document.body.style.overflow = "hidden";
+    });
 
-        closeBtn.addEventListener("click", () => {
-            mobileNav.classList.remove("active");
-            document.body.style.overflow = "";
-        });
+    closeBtn.addEventListener("click", () => {
+      mobileNav.classList.remove("active");
+      document.body.style.overflow = "";
+    });
 
-        document.querySelectorAll(".mobile-nav-links a").forEach(link => {
-            link.addEventListener("click", () => {
-                mobileNav.classList.remove("active");
-                document.body.style.overflow = "";
-            });
-        });
+    document.querySelectorAll(".mobile-nav-links a").forEach(link => {
+      link.addEventListener("click", () => {
+        mobileNav.classList.remove("active");
+        document.body.style.overflow = "";
+      });
+    });
+
+
+    const form = document.getElementById("contactForm");
+
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      if (!form.checkValidity()) {
+        event.stopPropagation();
+      } else {
+        alert("Form submitted successfully!");
+        form.reset();
+      }
+
+      form.classList.add("was-validated");
+    });
+
+
+
+
   </script>
 
 
