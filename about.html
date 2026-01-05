@@ -17,7 +17,7 @@
 
 <body>
 
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3 glass-nav">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top py-3 glass-nav ">
     <div class="container">
 
       <a class="navbar-brand d-flex align-items-center fw-bold fs-4" href="./index.html">
@@ -72,11 +72,11 @@
 
 
 
+<div class="container-fluid">
 
-
-  <section class="hero-sectionn  d-flex align-items-center text-center">
+  <section class="hero-sectionn  d-flex align-items-center text-center ">
     <div class="container-fluid">
-      <div class="row justify-content-center align-items-center" style="height:100vh">
+      <div class="row justify-content-center align-items-center" style="height:75vh">
         <div class="col-lg-10">
           <div class="badge-pill d-inline-block mb-4">
             <span class="dot"
@@ -104,7 +104,7 @@
 
 
 
-  <section class="vendor-section py-5 bg-darker">
+  <section class="vendor-section py-5 " style="border: 1px solid #334155;background-color: #0F172A;">
     <div class="container">
       <div class="row align-items-center g-5">
 
@@ -296,7 +296,7 @@
 
 
 
-  <section class="py-5 " style="border: 1px solid rgba(51, 65, 85, 1);">
+  <section class="py-5 " style="border: 1px solid #334155;background-color: #0F172A;">
     <div class="container">
 
 
@@ -414,7 +414,7 @@
 
 
   <section>
-    <div class=" contact  container-fluid  "style="padding: 70px;">
+    <div class=" contact  container-fluid py-5" style="border: 1px solid #334155;">
       <div class="text-center  flex-column align-items-center py-5">
         <h2 class="display-5 fw-bold text-white mb-3">Ready to scale with precision?</h2>
         <p class="inter text-light opacity-75 mb-4 col-md-8 mx-auto">Access the world's most skilled IT professionals
@@ -428,14 +428,14 @@
 
   <footer class="py-5" style="background: #020617; border-top: 1px solid #1e293b;" id="contact">
     <div class="container">
-      <div class="row g-4 inter text-center text-md-start">
-        <div class="col-lg-4">
+      <div class="row g-4 inter  text-md-start">
+        <div class="col-lg-4" style="color: #CBD5E1;">
           <a class="navbar-brand d-flex align-items-center justify-content-center justify-content-md-start fw-bold fs-4 text-white mb-3"
             href="#">
             <span class="logo-icon me-2">I</span> ITEK Bridge
           </a>
           <p class="small">Connecting world-class enterprises with the top 1% of engineering talent.</p>
-          <div class="footer-socials justify-content-center justify-content-md-start">
+         <div class="footer-socials justify-content-center justify-content-md-start">
             <a href="#" class="social-icon"><i class="bi bi-facebook"></i></a>
             <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
             <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
@@ -444,17 +444,18 @@
           </div>
 
 
-
         </div>
         <div class="col-6 col-lg-2 ">
           <h6 class="text-white mb-3">Company</h6>
           <ul class="list-unstyled small">
-            <li class="mb-2"><a href="./solutions.html" class="inter text-decoration-none">Solutions</a></li>
-            <li class="mb-2"><a href="./about.html" class="inter text-decoration-none">About</a></li>
-            <li class="mb-2"><a href="./contactUs.html" class="inter text-decoration-none">Contact Us</a></li>
+            <li class="mb-2"><a href="./solutions.html" class=" text-decoration-none"
+                style="color: #CBD5E1;">Solutions</a></li>
+            <li class="mb-2"><a href="./about.html" class=" text-decoration-none" style="color: #CBD5E1;">About</a></li>
+            <li class="mb-2"><a href="./contactUs.html" class=" text-decoration-none" style="color: #CBD5E1;">Contact
+                Us</a></li>
           </ul>
         </div>
-        <div class="col-6 col-lg-2">
+        <div class="col-6 col-lg-2" style="color: #CBD5E1;">
           <h6 class="text-white mb-3">Solutions</h6>
           <ul class="list-unstyled small">
             <li class="mb-2">AI & Machine Learning</li>
@@ -472,19 +473,20 @@
           <h6 class="text-white mb-3">Contact Us</h6>
         <ul class="list-unstyled small" style="color: rgba(255, 255, 255, 1);">
                         <li class="mb-2 d-flex align-items-center justify-content-start justify-content-md-start gap-2">
-                            <img src="./Assest/home/ph.svg" alt=""> <a  href="tel:+1(123)123-4567" style="color: #FFFFFF; text-decoration: none;">+1(123)123-4567</a>
+                           <a  href="tel:+1(123)123-4567" style="color: #FFFFFF; text-decoration: none;"><img src="./Assest/home/ph.svg" alt=""></a>  <a  href="tel:+1(123)123-4567" style="color: #FFFFFF; text-decoration: none;">+1(123)123-4567</a>
                         </li>
                         <li class="mb-2 d-flex align-items-center justify-content-start justify-content-md-start gap-2">
-                            <img src="./Assest/home/mail.svg" alt=""> <a href="mailto:contact@itekbridge.com" style="text-decoration: none; color: #FFFFFF;">contact@itekbridge.com</a>
+                            <a href="mailto:contact@itekbridge.com" style="text-decoration: none; color: #FFFFFF;"><img src="./Assest/home/mail.svg" alt=""> </a><a href="mailto:contact@itekbridge.com" style="text-decoration: none; color: #FFFFFF;">contact@itekbridge.com</a>
 
                         </li>
                         <li class="mb-2 d-flex align-items-center justify-content-start justify-content-md-start gap-2">
-                            <img src="./Assest/home/loc.svg" alt=""> 123 Tech Park Blvd, Silicon Valley
+                           <span  onclick="openMap()"> <img src="./Assest/home/loc.svg" alt=""></span><a onclick="openMap()"  href="" style="text-decoration: none;color: #FFFFFF; ">123 Tech Park Blvd, Silicon Valley, CA 94000</a>
+
                         </li>
                     </ul>
         </div>
       </div>
-      <div class="border-top border-secondary mt-5 pt-4 text-center small inter">
+      <div class="border-top border-secondary mt-5 pt-4 text-center small " style="color: #CBD5E1;">
         &copy; 2025 ITEK Bridge. All rights reserved.
       </div>
     </div>
@@ -526,8 +528,16 @@
         document.body.style.overflow = "";
       });
     });
-  </script>
 
+    function openMap() {
+
+
+            const url = `https://maps.app.goo.gl/6s92EvRFqgREFF627`;
+            window.open(url, "_blank");
+        }
+
+  </script>
+</div>
 
 </body>
 
